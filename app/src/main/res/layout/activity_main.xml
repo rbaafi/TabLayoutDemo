@@ -23,10 +23,16 @@
       android:id="@+id/tab_layout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-
-
+      app:tabMode="scrollable"
+      app:tabGravity="fill"/>
 
   </com.google.android.material.appbar.AppBarLayout>
+
+  <android.viewpager.widget.viewPager
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@String/appbar_scrolling_view_view_behavior"/>
 
   <com.google.android.material.floatingactionbutton.FloatingActionButton
     android:id="@+id/fab"
